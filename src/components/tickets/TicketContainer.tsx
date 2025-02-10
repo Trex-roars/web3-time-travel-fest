@@ -44,7 +44,7 @@ export const TicketContainer: React.FC = () => {
         if (user?.wallet) {
             fetchData();
         }
-    }, [user]);
+    }, [user, fetchUserTickets]);
 
     const handlePurchase = async () => {
         if (!user) {
