@@ -87,7 +87,15 @@ export default {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+			}
+		  , fontFamily: {
+			  'zentry': ['zentry', 'sans-serif'],
+			  'general': ['General Sans', 'sans-serif'],
+			  'circular-web': ['circular-web', 'sans-serif'],
+			  'robert-medium': ['robert-medium', 'sans-serif'],
+			  'robert-regular': ['robert-regular', 'sans-serif'],
+			  'saman': ['saman', 'sans-serif'],
+		  },
   	}
   },
   plugins: [require("tailwindcss-animate")],

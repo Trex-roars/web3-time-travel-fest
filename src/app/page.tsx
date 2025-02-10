@@ -1,14 +1,15 @@
-'use client'
+import About from '@/components/About'
+import Hero from '@/components/home'
 
-import { TicketContainer } from "@/components/tickets/TicketContainer";
-
-const page = () => {
+const HomePage = () => {
   return (
     <div>
-      <TicketContainer />
-      <h1>Nice</h1>
+
+
+      <Hero />
+      <About />
     </div>
   )
 }
 
-export default page
+export default HomePage
