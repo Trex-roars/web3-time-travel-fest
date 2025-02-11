@@ -27,8 +27,9 @@ const Prop: React.FC<GLBObjectProps> = ({ path, title, price }) => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string>('');
     const [success, setSuccess] = useState<string>('');
-    const { user, login, sendTransaction } = usePrivy();
+    const { user, login, sendTransaction, createWallet } = usePrivy();
 
+    // Three.js setup code remains the same...
     useEffect(() => {
         const mount = mountRef.current;
         if (!mount) return;
@@ -124,6 +125,12 @@ const Prop: React.FC<GLBObjectProps> = ({ path, title, price }) => {
         setSuccess('');
 
         try {
+            // Check if user has an embedded wallet
+            if (!user.wallet) {
+                // Create an embedded wallet if they don't have one
+                await createWallet();
+            }
+
             const tx = await sendTransaction({
                 to: "0x4088e079d50a9e9cF6237cB6c7E7a94fAff3a142",
                 value: parseEther(price.toString()),
