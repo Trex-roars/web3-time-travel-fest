@@ -108,8 +108,9 @@ const FloatingImage = () => {
                 <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
                     <div className="flex h-full w-fit flex-col items-center md:items-start">
                         <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-                            Where Eras Collide, Samay<b>Chakra</b> Unfolds.
-                            Unlock exclusive time-travel-themed merchandise and carry a piece of history into the future!
+                            {/* Where realms converge, lies Zentry and the boundless pillar.
+                            Discover its secrets and shape your fate amidst infinite
+                            opportunities. */}
                         </p>
 
                         <Button
