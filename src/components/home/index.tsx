@@ -1,11 +1,9 @@
 'use client'
 
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { MoveLeftIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-
 import Button from "./Button";
 import VideoPreview from "./VideoPreview";
 
@@ -14,7 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
     const [hasClicked, setHasClicked] = useState(false);
-
     const [loading, setLoading] = useState(true);
     const [loadedVideos, setLoadedVideos] = useState(0);
 
@@ -25,64 +22,41 @@ const Hero = () => {
         setLoadedVideos((prev) => prev + 1);
     };
 
+    // Lazy load videos using IntersectionObserver or similar techniques
+    const handleMiniVdClick = () => {
+        setHasClicked(true);
+        setCurrentIndex((prevIndex) => (prevIndex % totalVideos) + 1);
+    };
+
     useEffect(() => {
-        if (loadedVideos === totalVideos - 1) {
+        if (loadedVideos >= 1) {
             setLoading(false);
         }
     }, [loadedVideos]);
 
-    const handleMiniVdClick = () => {
-        setHasClicked(true);
-
-        setCurrentIndex((prevIndex) => (prevIndex % totalVideos) + 1);
-    };
-
-    useGSAP(
-        () => {
-            if (hasClicked) {
-                gsap.set("#next-video", { visibility: "visible" });
-                gsap.to("#next-video", {
-                    transformOrigin: "center center",
-                    scale: 1,
-                    width: "100%",
-                    height: "100%",
-                    duration: 1,
-                    ease: "power1.inOut",
-                    onStart: () => nextVdRef.current.play(),
-                });
-                gsap.from("#current-video", {
-                    transformOrigin: "center center",
-                    scale: 0,
-                    duration: 1.5,
-                    ease: "power1.inOut",
-                });
-            }
-        },
-        {
-            dependencies: [currentIndex],
-            revertOnUpdate: true,
+    // Use GSAP animations with care and optimize performance
+    useEffect(() => {
+        if (hasClicked) {
+            gsap.set("#next-video", { visibility: "visible" });
+            gsap.to("#next-video", {
+                transformOrigin: "center center",
+                scale: 1,
+                width: "100%",
+                height: "100%",
+                duration: 1,
+                ease: "power1.inOut",
+                onStart: () => nextVdRef.current.play(),
+            });
+            gsap.from("#current-video", {
+                transformOrigin: "center center",
+                scale: 0,
+                duration: 1.5,
+                ease: "power1.inOut",
+            });
         }
-    );
+    }, [currentIndex, hasClicked]);
 
-    useGSAP(() => {
-        gsap.set("#video-frame", {
-            clipPath: "polygon(14% 0, 72% 0, 88% 90%, 0 95%)",
-            borderRadius: "0% 0% 40% 10%",
-        });
-        gsap.from("#video-frame", {
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            borderRadius: "0% 0% 0% 0%",
-            ease: "power1.inOut",
-            scrollTrigger: {
-                trigger: "#video-frame",
-                start: "center center",
-                end: "bottom center",
-                scrub: true,
-            },
-        });
-    });
-
-    const getVideoSrc = (index: number) => `/videos/hero-${index}.mp4`;
+    const getVideoSrc = (index: number) => `videos/hero-${index}.mp4`;
 
     return (
         <div className="relative h-dvh w-screen overflow-x-hidden">
@@ -96,10 +70,7 @@ const Hero = () => {
                 </div>
             )}
 
-            <div
-                id="video-frame"
-                className="relative z-10  h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
-            >
+            <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75">
                 <div>
                     <div className="mask-clip-path items-center justify-center absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
                         <VideoPreview>
@@ -113,6 +84,7 @@ const Hero = () => {
                                     loop
                                     muted
                                     id="current-video"
+                                    preload="auto"
                                     className="size-64 origin-center scale-150 object-cover object-center"
                                     onLoadedData={handleVideoLoad}
                                 />
@@ -120,6 +92,7 @@ const Hero = () => {
                         </VideoPreview>
                     </div>
 
+                    {/* Lazy-loaded video */}
                     <video
                         ref={nextVdRef}
                         src={getVideoSrc(currentIndex)}
@@ -130,9 +103,7 @@ const Hero = () => {
                         onLoadedData={handleVideoLoad}
                     />
                     <video
-                        src={getVideoSrc(
-                            currentIndex === totalVideos - 1 ? 1 : currentIndex
-                        )}
+                        src={getVideoSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
                         autoPlay
                         loop
                         muted

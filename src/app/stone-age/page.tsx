@@ -1,7 +1,7 @@
 'use client';
 import Prop from '@/components/ui/prop';
-import { useRouter } from 'next/navigation'
-import { useRef, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useEffect, useRef } from 'react';
 
 function FuturePage() {
     const router = useRouter();
@@ -17,7 +17,7 @@ function FuturePage() {
                     el: shopElement.current,
                     smooth: true
                 });
-                
+
                 // Clean up on unmount
                 return () => {
                     scroll.destroy();
@@ -63,18 +63,18 @@ function FuturePage() {
             >
                 Go to Medieval
             </button>
-            <div 
-                id="shop" 
-                className='h-screen w-screen flex items-center text-white text-4xl px-8 text-center bg-black' 
-                ref={shopElement} 
+            <div
+                id="shop"
+                className='h-screen w-screen flex items-center text-white text-4xl px-8 text-center bg-black'
+                ref={shopElement}
             >
-                <Prop path="/models/fantasy_knight.glb" title="Future Item 1" price={200} />
-                <Prop path="/models/fantasy_knight.glb" title="Future Item 2" price={300} />
-                <Prop path="/models/fantasy_knight.glb" title="Future Item 3" price={400} />
-                <Prop path="/models/fantasy_knight.glb" title="Future Item 4" price={500} />
-                <Prop path="/models/fantasy_knight.glb" title="Future Item 5" price={600} />
-                <Prop path="/models/fantasy_knight.glb" title="Future Item 6" price={700} />
-                <Prop path="/models/fantasy_knight.glb" title="Future Item 7" price={800} />
+                <Prop path="/models/fantasy_knight.glb" title="Future Item 1" price={0.01} propId={1} />
+                <Prop path="/models/fantasy_knight.glb" title="Future Item 2" price={0.01} propId={2} />
+                <Prop path="/models/fantasy_knight.glb" title="Future Item 3" price={0.01} propId={3} />
+                <Prop path="/models/fantasy_knight.glb" title="Future Item 4" price={0.01} propId={4} />
+                <Prop path="/models/fantasy_knight.glb" title="Future Item 5" price={0.01} propId={5} />
+                <Prop path="/models/fantasy_knight.glb" title="Future Item 6" price={0.01} propId={6} />
+                <Prop path="/models/fantasy_knight.glb" title="Future Item 7" price={0.01} propId={7} />
             </div>
         </div>
     )
