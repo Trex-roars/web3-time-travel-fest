@@ -40,17 +40,12 @@ function FuturePage() {
     return (
         <div>
             <iframe
-                src="https://sketchfab.com/models/cc60ba5dbd014d63839935c0e89eae53/embed?autostart=1"
+                src="https://sketchfab.com/models/734844933f4642999f0ef284ecd4d184/embed?autostart=1"
                 title="Example Iframe"
                 className='h-screen w-screen'
                 style={{ border: 'none' }}
             ></iframe>
-            <button
-                onClick={() => router.push('/stone-age')}
-                className="fixed bottom-4 z-100 left-4 bg-blue-500 text-white px-4 py-2 rounded"
-            >
-                Go to Past
-            </button>
+    
             <button
                 onClick={handleShopClick}
                 className="fixed bottom-4 z-100 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded"
