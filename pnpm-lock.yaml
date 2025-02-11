@@ -104,12 +104,6 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: ^1.1.7
         version: 1.1.8(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-<<<<<<< HEAD
-=======
-      '@types/three':
-        specifier: ^0.173.0
-        version: 0.173.0
->>>>>>> 2a511fb (nice)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -128,24 +122,18 @@ importers:
       ethers:
         specifier: ^6.13.5
         version: 6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-<<<<<<< HEAD
       framer-motion:
         specifier: ^12.4.2
         version: 12.4.2(@emotion/is-prop-valid@1.2.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-=======
->>>>>>> 2a511fb (nice)
       gsap:
         specifier: ^3.12.7
         version: 3.12.7
       input-otp:
         specifier: ^1.4.2
         version: 1.4.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-<<<<<<< HEAD
-=======
       locomotive-scroll:
         specifier: ^4.1.4
         version: 4.1.4
->>>>>>> 2a511fb (nice)
       lucide-react:
         specifier: ^0.474.0
         version: 0.474.0(react@19.0.0)
@@ -185,6 +173,9 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.17)(typescript@5.7.3)))
+      three:
+        specifier: ^0.173.0
+        version: 0.173.0
       vaul:
         specifier: ^1.1.2
         version: 1.1.2(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -228,12 +219,6 @@ importers:
       '@types/chai':
         specifier: ^4.2.0
         version: 4.3.20
-<<<<<<< HEAD
-=======
-      '@types/locomotive-scroll':
-        specifier: ^4.1.4
-        version: 4.1.4
->>>>>>> 2a511fb (nice)
       '@types/mocha':
         specifier: '>=9.1.0'
         version: 10.0.10
@@ -1968,12 +1953,6 @@ packages:
   '@tsconfig/node16@1.0.4':
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
 
-<<<<<<< HEAD
-=======
-  '@tweenjs/tween.js@23.1.3':
-    resolution: {integrity: sha512-vJmvvwFxYuGnF2axRtPYocag6Clbb5YS7kLL+SO/TeVFzHqDIWrNKYtcsPMibjDx9O+bu+psAy9NKfWklassUA==}
-
->>>>>>> 2a511fb (nice)
   '@typechain/ethers-v6@0.5.1':
     resolution: {integrity: sha512-F+GklO8jBWlsaVV+9oHaPh5NJdd6rAKN4tklGfInX1Q7h0xPgVLP39Jl3eCulPB5qexI71ZFHwbljx4ZXNfouA==}
     peerDependencies:
@@ -2055,12 +2034,6 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-<<<<<<< HEAD
-=======
-  '@types/locomotive-scroll@4.1.4':
-    resolution: {integrity: sha512-G8GUr/ML/Ssxxl83VYbtFHMFoPNOQh/glzPWi5Z3Jk7Hng26Sl0ckAV11uq1AGKEq40jFMPhyAIuQ6fGPiBmHQ==}
-
->>>>>>> 2a511fb (nice)
   '@types/lru-cache@5.1.1':
     resolution: {integrity: sha512-ssE3Vlrys7sdIzs5LOxCzTVMsU7i9oa/IaW92wF32JFb3CVczqOkru2xspuKczHEbG3nvmPY7IFqVmGGHdNbYw==}
 
@@ -2108,33 +2081,15 @@ packages:
   '@types/secp256k1@4.0.6':
     resolution: {integrity: sha512-hHxJU6PAEUn0TP4S/ZOzuTUvJWuZ6eIKeNKb5RBpODvSl6hp1Wrw4s7ATY50rklRCScUDpHzVA/DQdSjJ3UoYQ==}
 
-<<<<<<< HEAD
   '@types/stylis@4.2.5':
     resolution: {integrity: sha512-1Xve+NMN7FWjY14vLoY5tL3BVEQ/n42YLwaqJIPYhotZ9uBHt87VceMwWQpzmdEt2TNXIorIFG+YeCUUW7RInw==}
 
-=======
-  '@types/stats.js@0.17.3':
-    resolution: {integrity: sha512-pXNfAD3KHOdif9EQXZ9deK82HVNaXP5ZIF5RP2QG6OQFNTaY2YIetfrE9t528vEreGQvEPRDDc8muaoYeK0SxQ==}
-
-  '@types/stylis@4.2.5':
-    resolution: {integrity: sha512-1Xve+NMN7FWjY14vLoY5tL3BVEQ/n42YLwaqJIPYhotZ9uBHt87VceMwWQpzmdEt2TNXIorIFG+YeCUUW7RInw==}
-
-  '@types/three@0.173.0':
-    resolution: {integrity: sha512-KtNjfI/CRB6JVKIVeZM1R3GYDX2wkoV2itNcQu2j4d7qkhjGOuB+s2oF6jl9mztycDLGMtrAnJQYxInC8Bb20A==}
-
->>>>>>> 2a511fb (nice)
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
   '@types/uuid@8.3.4':
     resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
 
-<<<<<<< HEAD
-=======
-  '@types/webxr@0.5.21':
-    resolution: {integrity: sha512-geZIAtLzjGmgY2JUi6VxXdCrTb99A7yP49lxLr2Nm/uIK0PkkxcEi4OGhoGDO4pxCf3JwGz2GiJL2Ej4K2bKaA==}
-
->>>>>>> 2a511fb (nice)
   '@types/ws@7.4.7':
     resolution: {integrity: sha512-JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtAVK0g19muApzAy4bm9byz79xa2ZnO/BOBC2R8RC5Lww==}
 
@@ -2285,12 +2240,6 @@ packages:
   '@walletconnect/window-metadata@1.0.1':
     resolution: {integrity: sha512-9koTqyGrM2cqFRW517BPY/iEtUDx2r1+Pwwu5m7sJ7ka79wi3EyqhqcICk/yDmv6jAS1rjKgTKXlEhanYjijcA==}
 
-<<<<<<< HEAD
-=======
-  '@webgpu/types@0.1.54':
-    resolution: {integrity: sha512-81oaalC8LFrXjhsczomEQ0u3jG+TqE6V9QHLA8GNZq/Rnot0KDugu3LhSYSlie8tSdooAN1Hov05asrUUp9qgg==}
-
->>>>>>> 2a511fb (nice)
   '@xobotyi/scrollbar-width@1.9.5':
     resolution: {integrity: sha512-N8tkAACJx2ww8vFMneJmaAgmjAG1tnVBZJRLRcx061tmsLRZHSEZSLuGWnwPtunsSLvSqXQ2wfp7Mgqg1I+2dQ==}
 
@@ -2543,12 +2492,9 @@ packages:
   bech32@1.1.4:
     resolution: {integrity: sha512-s0IrSOzLlbvX7yp4WBfPITzpAU8sqQcpsmwXDiKwrG4r491vwCO/XpejasRNl0piBMe/DvP4Tz0mIS/X1DPJBQ==}
 
-<<<<<<< HEAD
-=======
   bezier-easing@2.1.0:
     resolution: {integrity: sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig==}
 
->>>>>>> 2a511fb (nice)
   bigint-buffer@1.1.5:
     resolution: {integrity: sha512-trfYco6AoZ+rKhKnxA0hgX0HAbVP/s808/EuDSe2JDzUnCp/xAsli35Orvk67UrTEcwuxZqYZDmfA2RXJgxVvA==}
     engines: {node: '>= 10.0.0'}
@@ -2557,12 +2503,9 @@ packages:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
 
-<<<<<<< HEAD
-=======
   bindall-standalone@1.0.5:
     resolution: {integrity: sha512-HDI7YBWXVJk/eoGz+e4lYQQJnYp1ZHcUvAY71lVptLMhQnDm86vD73AGPw2qIlgYR3P0bjmoAcXiA8qhFejBhA==}
 
->>>>>>> 2a511fb (nice)
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
 
@@ -3437,12 +3380,6 @@ packages:
   fetch-retry@5.0.6:
     resolution: {integrity: sha512-3yurQZ2hD9VISAhJJP9bpYFNQrHHBXE2JxxjY5aLEcDi46RmAzJE2OC9FAde0yis5ElW0jTTzs0zfg/Cca4XqQ==}
 
-<<<<<<< HEAD
-=======
-  fflate@0.8.2:
-    resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
-
->>>>>>> 2a511fb (nice)
   file-entry-cache@8.0.0:
     resolution: {integrity: sha512-XXTUwCvisa5oacNGRP9SfNtYBNAMi+RPwBFmblZEF7N7swHYQS6/Zfk7SRwx4D5j3CH211YNRco1DEMNVfZCnQ==}
     engines: {node: '>=16.0.0'}
@@ -3512,7 +3449,6 @@ packages:
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
 
-<<<<<<< HEAD
   framer-motion@12.4.2:
     resolution: {integrity: sha512-pW307cQKjDqEuO1flEoIFf6TkuJRfKr+c7qsHAJhDo4368N/5U8/7WU8J+xhd9+gjmOgJfgp+46evxRRFM39dA==}
     peerDependencies:
@@ -3527,8 +3463,6 @@ packages:
       react-dom:
         optional: true
 
-=======
->>>>>>> 2a511fb (nice)
   fs-extra@10.1.0:
     resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
     engines: {node: '>=12'}
@@ -4101,12 +4035,9 @@ packages:
     resolution: {integrity: sha512-MbjN408fEndfiQXbFQ1vnd+1NoLDsnQW41410oQBXiyXDMYH5z505juWa4KUE1LqxRC7DgOgZDbKLxHIwm27hA==}
     engines: {node: '>=0.10'}
 
-<<<<<<< HEAD
-=======
   lethargy@1.0.9:
     resolution: {integrity: sha512-nFM8blpCF9rqIL5mRAaTGc78W8oQixVtsD86jbEPvcI13+lDUYJf3R7DZQQL7tCiBpbGpGKMX2gwJFO9hiaOkg==}
 
->>>>>>> 2a511fb (nice)
   levn@0.3.0:
     resolution: {integrity: sha512-0OO4y2iOHix2W6ujICbKIaEQXvFQHue65vUG3pb5EUomzPI90z9hsA1VsO/dbIIpC53J8gxM9Q4Oho0jrCM/yA==}
     engines: {node: '>= 0.8.0'}
@@ -4142,12 +4073,9 @@ packages:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
 
-<<<<<<< HEAD
-=======
   locomotive-scroll@4.1.4:
     resolution: {integrity: sha512-6i98cFF2SKg6wIPpwVPuo2FG8qL3USsdDeew78TEYZyLoqleMWNfkSDpWA6mPym4dOfTIBXc678VmGlkgx3fTA==}
 
->>>>>>> 2a511fb (nice)
   lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
 
@@ -4219,12 +4147,6 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
 
-<<<<<<< HEAD
-=======
-  meshoptimizer@0.18.1:
-    resolution: {integrity: sha512-ZhoIoL7TNV4s5B6+rx5mC//fw8/POGyNxS/DZyCJeiZ12ScLfVwRE/GfsxwiTkMYYD5DmK2/JXnEVXqL4rF+Sw==}
-
->>>>>>> 2a511fb (nice)
   micro-ftch@0.3.1:
     resolution: {integrity: sha512-/0LLxhzP0tfiR5hcQebtudP56gUurs2CLkGarnCiB/OqEyUFQ6U3paQi/tgLv0hBJYt2rnr9MNpxz4fiiugstg==}
 
@@ -4289,15 +4211,12 @@ packages:
     engines: {node: '>= 14.0.0'}
     hasBin: true
 
-<<<<<<< HEAD
   motion-dom@12.0.0:
     resolution: {integrity: sha512-CvYd15OeIR6kHgMdonCc1ihsaUG4MYh/wrkz8gZ3hBX/uamyZCXN9S9qJoYF03GqfTt7thTV/dxnHYX4+55vDg==}
 
   motion-utils@12.0.0:
     resolution: {integrity: sha512-MNFiBKbbqnmvOjkPyOKgHUp3Q6oiokLkI1bEwm5QA28cxMZrv0CbbBGDNmhF6DIXsi1pCQBSs0dX8xjeER1tmA==}
 
-=======
->>>>>>> 2a511fb (nice)
   motion@10.16.2:
     resolution: {integrity: sha512-p+PurYqfUdcJZvtnmAqu5fJgV2kR0uLFQuBKtLeFVTrYEVllI99tiOTSefVNYuip9ELTEkepIIDftNdze76NAQ==}
 
@@ -5120,12 +5039,9 @@ packages:
     resolution: {integrity: sha512-qMCMfhY040cVHT43K9BFygqYbUPFZKHOg7K73mtTWJRb8pyP3fzf4Ixd5SzdEJQ6MRUg/WBnOLxghZtKKurENQ==}
     engines: {node: '>=10'}
 
-<<<<<<< HEAD
-=======
   smoothscroll-polyfill@0.4.4:
     resolution: {integrity: sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==}
 
->>>>>>> 2a511fb (nice)
   solc@0.8.26:
     resolution: {integrity: sha512-yiPQNVf5rBFHwN6SIf3TUUvVAFKcQqmSUFeq+fb6pNRCo0ZCgpYOZDi3BVoezCPIAcKrVYd/qXlBLUP9wVrZ9g==}
     engines: {node: '>=10.0.0'}
@@ -5395,6 +5311,9 @@ packages:
   thread-stream@0.15.2:
     resolution: {integrity: sha512-UkEhKIg2pD+fjkHQKyJO3yoIvAP3N6RlNFt2dUhcS1FGvCD1cQa1M/PGknCLFIyZdtJOWQjejp7bdNqmN7zwdA==}
 
+  three@0.173.0:
+    resolution: {integrity: sha512-AUwVmViIEUgBwxJJ7stnF0NkPpZxx1aZ6WiAbQ/Qq61h6I9UR4grXtZDmO8mnlaNORhHnIBlXJ1uBxILEKuVyw==}
+
   throttle-debounce@3.0.1:
     resolution: {integrity: sha512-dTEWWNu6JmeVXY0ZYoPuH5cRIwc0MeGbJwah9KUNYSJwommQpCzTySTpEe8Gs1J23aeWEuAobe4Ag7EHVt/LOg==}
     engines: {node: '>=10'}
@@ -5405,12 +5324,9 @@ packages:
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
 
-<<<<<<< HEAD
-=======
   tiny-emitter@1.2.0:
     resolution: {integrity: sha512-rWjF00inHeWtT5UbQYAXoMI4hL6TRMqohuKCsODyPYYmfAxqfMnXLsIeNrbdPEkNxlk++rojVilTnI9IVmEBtA==}
 
->>>>>>> 2a511fb (nice)
   tiny-invariant@1.3.3:
     resolution: {integrity: sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==}
 
@@ -5744,12 +5660,9 @@ packages:
       typescript:
         optional: true
 
-<<<<<<< HEAD
-=======
   virtual-scroll@1.5.2:
     resolution: {integrity: sha512-7jDHwlKbHUho7CYU/HojE/VKFH8GV9P5fVWP2HCa7dRUOpVvwl93OBOKIIcb2mKd+vqsbVR/0zl0X70+3sUZqA==}
 
->>>>>>> 2a511fb (nice)
   web3-utils@1.10.4:
     resolution: {integrity: sha512-tsu8FiKJLk2PzhDl9fXbGUWTkkVXYhtTA+SmEFkKft+9BgwLxfCRpU96sWv7ICC8zixBNd3JURVoiR3dUXgP8A==}
     engines: {node: '>=8.0.0'}
@@ -7978,11 +7891,6 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
-<<<<<<< HEAD
-=======
-  '@tweenjs/tween.js@23.1.3': {}
-
->>>>>>> 2a511fb (nice)
   '@typechain/ethers-v6@0.5.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.3))(typescript@5.7.3)':
     dependencies:
       ethers: 6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)
@@ -8066,11 +7974,6 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-<<<<<<< HEAD
-=======
-  '@types/locomotive-scroll@4.1.4': {}
-
->>>>>>> 2a511fb (nice)
   '@types/lru-cache@5.1.1': {}
 
   '@types/minimatch@5.1.2': {}
@@ -8113,33 +8016,12 @@ snapshots:
     dependencies:
       '@types/node': 20.17.17
 
-<<<<<<< HEAD
   '@types/stylis@4.2.5': {}
 
-=======
-  '@types/stats.js@0.17.3': {}
-
-  '@types/stylis@4.2.5': {}
-
-  '@types/three@0.173.0':
-    dependencies:
-      '@tweenjs/tween.js': 23.1.3
-      '@types/stats.js': 0.17.3
-      '@types/webxr': 0.5.21
-      '@webgpu/types': 0.1.54
-      fflate: 0.8.2
-      meshoptimizer: 0.18.1
-
->>>>>>> 2a511fb (nice)
   '@types/trusted-types@2.0.7': {}
 
   '@types/uuid@8.3.4': {}
 
-<<<<<<< HEAD
-=======
-  '@types/webxr@0.5.21': {}
-
->>>>>>> 2a511fb (nice)
   '@types/ws@7.4.7':
     dependencies:
       '@types/node': 20.17.17
@@ -8589,11 +8471,6 @@ snapshots:
       '@walletconnect/window-getters': 1.0.1
       tslib: 1.14.1
 
-<<<<<<< HEAD
-=======
-  '@webgpu/types@0.1.54': {}
-
->>>>>>> 2a511fb (nice)
   '@xobotyi/scrollbar-width@1.9.5': {}
 
   JSONStream@1.3.5:
@@ -8839,22 +8716,16 @@ snapshots:
 
   bech32@1.1.4: {}
 
-<<<<<<< HEAD
-=======
   bezier-easing@2.1.0: {}
 
->>>>>>> 2a511fb (nice)
   bigint-buffer@1.1.5:
     dependencies:
       bindings: 1.5.0
 
   binary-extensions@2.3.0: {}
 
-<<<<<<< HEAD
-=======
   bindall-standalone@1.0.5: {}
 
->>>>>>> 2a511fb (nice)
   bindings@1.5.0:
     dependencies:
       file-uri-to-path: 1.0.0
@@ -9973,11 +9844,6 @@ snapshots:
 
   fetch-retry@5.0.6: {}
 
-<<<<<<< HEAD
-=======
-  fflate@0.8.2: {}
-
->>>>>>> 2a511fb (nice)
   file-entry-cache@8.0.0:
     dependencies:
       flat-cache: 4.0.1
@@ -10043,7 +9909,6 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
-<<<<<<< HEAD
   framer-motion@12.4.2(@emotion/is-prop-valid@1.2.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       motion-dom: 12.0.0
@@ -10054,8 +9919,6 @@ snapshots:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
 
-=======
->>>>>>> 2a511fb (nice)
   fs-extra@10.1.0:
     dependencies:
       graceful-fs: 4.2.11
@@ -10721,11 +10584,8 @@ snapshots:
     dependencies:
       language-subtag-registry: 0.3.23
 
-<<<<<<< HEAD
-=======
   lethargy@1.0.9: {}
 
->>>>>>> 2a511fb (nice)
   levn@0.3.0:
     dependencies:
       prelude-ls: 1.1.2
@@ -10766,15 +10626,12 @@ snapshots:
     dependencies:
       p-locate: 5.0.0
 
-<<<<<<< HEAD
-=======
   locomotive-scroll@4.1.4:
     dependencies:
       bezier-easing: 2.1.0
       smoothscroll-polyfill: 0.4.4
       virtual-scroll: 1.5.2
 
->>>>>>> 2a511fb (nice)
   lodash.camelcase@4.3.0: {}
 
   lodash.clonedeep@4.5.0: {}
@@ -10834,11 +10691,6 @@ snapshots:
 
   merge2@1.4.1: {}
 
-<<<<<<< HEAD
-=======
-  meshoptimizer@0.18.1: {}
-
->>>>>>> 2a511fb (nice)
   micro-ftch@0.3.1: {}
 
   micromatch@4.0.8:
@@ -10909,15 +10761,12 @@ snapshots:
       yargs-parser: 20.2.9
       yargs-unparser: 2.0.0
 
-<<<<<<< HEAD
   motion-dom@12.0.0:
     dependencies:
       motion-utils: 12.0.0
 
   motion-utils@12.0.0: {}
 
-=======
->>>>>>> 2a511fb (nice)
   motion@10.16.2:
     dependencies:
       '@motionone/animation': 10.18.0
@@ -11844,11 +11693,8 @@ snapshots:
       astral-regex: 2.0.0
       is-fullwidth-code-point: 3.0.0
 
-<<<<<<< HEAD
-=======
   smoothscroll-polyfill@0.4.4: {}
 
->>>>>>> 2a511fb (nice)
   solc@0.8.26(debug@4.4.0):
     dependencies:
       command-exists: 1.2.9
@@ -12196,6 +12042,8 @@ snapshots:
     dependencies:
       real-require: 0.1.0
 
+  three@0.173.0: {}
+
   throttle-debounce@3.0.1: {}
 
   through2@4.0.2:
@@ -12204,11 +12052,8 @@ snapshots:
 
   through@2.3.8: {}
 
-<<<<<<< HEAD
-=======
   tiny-emitter@1.2.0: {}
 
->>>>>>> 2a511fb (nice)
   tiny-invariant@1.3.3: {}
 
   tinycolor2@1.6.0: {}
@@ -12503,8 +12348,6 @@ snapshots:
       - utf-8-validate
       - zod
 
-<<<<<<< HEAD
-=======
   virtual-scroll@1.5.2:
     dependencies:
       bindall-standalone: 1.0.5
@@ -12512,7 +12355,6 @@ snapshots:
       object-assign: 4.1.1
       tiny-emitter: 1.2.0
 
->>>>>>> 2a511fb (nice)
   web3-utils@1.10.4:
     dependencies:
       '@ethereumjs/util': 8.1.0
