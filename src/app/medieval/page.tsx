@@ -25,7 +25,24 @@ function App() {
             >
                 Go to Future
             </button>
+<<<<<<< HEAD
         </>
+=======
+            <div 
+                id="shop" 
+                className='h-screen w-screen flex items-center text-white text-4xl px-8 text-center bg-black' 
+                ref={shopElement} 
+            >
+                <Prop path="/models/fantasy_knight.glb" title="Knight Costume" price={100} />
+                <Prop path="/models/ticket2.glb" title="Knight Costume" price={100} />
+                <Prop path="/models/sword.glb" title="Knight Costume" price={100} />
+                <Prop path="/models/fantasy_knight.glb" title="Knight Costume" price={100} />
+                <Prop path="/models/fantasy_knight.glb" title="Knight Costume" price={100} />
+                <Prop path="/models/fantasy_knight.glb" title="Knight Costume" price={100} />
+                <Prop path="/models/fantasy_knight.glb" title="Knight Costume" price={100} />
+            </div>
+        </div>
+>>>>>>> 2a511fb (nice)
     )
 }
 
