@@ -1,7 +1,9 @@
+'use client'
+
 import gsap from "gsap";
 import { useRef } from "react";
 
-import AnimatedTitle from "./AnimatedTitle";
+import AnimatedTitle from "../About/AnimatedTitle";
 import Button from "./Button";
 
 const FloatingImage = () => {
