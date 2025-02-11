@@ -14,7 +14,7 @@ const HomePage = () => {
       {/* <Features /> */}
       <Story />
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

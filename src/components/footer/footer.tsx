@@ -8,7 +8,7 @@ import { SocialLinks } from "./social-links";
 const sections = {
   quickLinks: [
     { label: "Features", href: "/features" },
-    { label: "Team", href: "/team" },
+    // { label: "Team", href: "/team" },
     { label: "Get Started", href: "/get-started" },
   ],
   contact: [
@@ -22,7 +22,7 @@ const sections = {
 
 export function Footer() {
   return (
-    <footer className="border-t w-full overflow-hidden  bg-muted/40 px-8">
+    <footer className="border-t w-full overflow-hidden bg-black text-white px-24 ">
       <div className="container py-8">
         <div className="grid gap-1 sm:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-3">
@@ -39,7 +39,7 @@ export function Footer() {
               >
                 <Image
                   unoptimized
-                  src="/t-rex.gif"
+                  src="/videos/t-rex.gif"
                   width={50}
                   height={50}
                   alt="T-Rex Logo"
@@ -52,7 +52,7 @@ export function Footer() {
                   transition={{ delay: 0.3, duration: 0.5 }}
                   className="text-3xl font-extrabold"
                 >
-                  The
+                  SAMAY
                   <span
                     className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500"
                     style={{
@@ -60,7 +60,7 @@ export function Footer() {
                         "0 0 8px rgba(255, 0, 150, 0.8), 0 0 15px rgba(255, 0, 150, 0.6)",
                     }}
                   >
-                    AGENT
+                    CHA<b>K</b>RA
                   </span>
                 </motion.h1>
                 <motion.span
@@ -74,8 +74,7 @@ export function Footer() {
               </div>
             </motion.div>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-              Boost engagement, track trends, and grow smarter with powerful AI
-              insights!
+              Explore, Experience, and Evolve with Samay<b>Chakra</b> – Your Gateway to Timeless Adventures!
             </p>
             <div className="mt-4">
               <SocialLinks />
@@ -93,7 +92,7 @@ export function Footer() {
         <div className="mt-8 border-t pt-6">
           <div className="flex flex-col justify-between space-y-4 sm:flex-row sm:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} TheAGENT. All rights reserved.
+              © {new Date().getFullYear()} SamayChakra. All rights reserved.
             </p>
           </div>
         </div>
