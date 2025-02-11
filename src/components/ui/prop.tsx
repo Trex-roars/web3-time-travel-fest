@@ -19,10 +19,9 @@ interface GLBObjectProps {
     path: string;
     title: string;
     price: number;
-    contractAddress: string;
 }
 
-const Prop: React.FC<GLBObjectProps> = ({ path, title, price, contractAddress }) => {
+const Prop: React.FC<GLBObjectProps> = ({ path, title, price }) => {
     const mountRef = useRef<HTMLDivElement>(null);
     const [showPayment, setShowPayment] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -126,7 +125,7 @@ const Prop: React.FC<GLBObjectProps> = ({ path, title, price, contractAddress })
 
         try {
             const tx = await sendTransaction({
-                to: contractAddress,
+                to: "0x4088e079d50a9e9cF6237cB6c7E7a94fAff3a142",
                 value: parseEther(price.toString()),
             });
 
